@@ -108,7 +108,7 @@ public class Game {
                    System.out.println("We have successfully undoed player: " + player.getName() +"'s last move");
                    humanPlayer.decrementUndoCount();
                    if(humanPlayer.getPendingUndoCount() == 0){
-                       System.out.println("This was your last undo, no more undo attempts left");
+                       System.out.println("This was your last undo, no more undo attempts left for "+ player.getName());
                    }
 
                    if(gameStatus.equals(GameStatus.ENDED) || gameStatus.equals(GameStatus.DRAWN)){
